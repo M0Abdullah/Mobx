@@ -1,0 +1,14 @@
+Create a todo app with following feature:
+page 1: will have one antd input, antd add button and antd table
+Use icons in action columns
+On click on edit: it should open antd modal with again input and add and cancel button in it
+on cancel it should cancel the modal
+on edit it should update the selected todo
+do not allow user to add same todos again
+when user type in input then it must show matching todos similar to it in table
+User antd components, react Ts and mst
+
+
+
+5:37
+do this task and inform me when you complete

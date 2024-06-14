@@ -22,8 +22,10 @@ const TodoList = types
   })
   .actions(self => ({
     addTodo(text) {
-      if (text === '') {
+      if (text=== '') {
         self.message = 'Please Enter Something';
+      }else if (self.todos.some(todo=>todo.text === text)) {
+        self.message = 'Todo already exists';
         return;
       }
       const newTodo = Todo.create({
