@@ -1,0 +1,103 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.todo {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding: 20px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    border-bottom: 2px solid #ccc;
+}
+
+.todo_1 {
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.todo1 {
+    margin-bottom: 20px;
+}
+
+.todo2 {
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+}
+
+.todo2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.todo2 ul:last-child {
+    border-bottom: none;
+}
+
+.todo2 ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.todo2 ul li span {
+    flex-grow: 1;
+}
+
+.abd,
+.abd1,
+.abd2 {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.abd:hover,
+.abd1:hover,
+.abd2:hover {
+    color: #0072ff;
+}
+
+.todo3 {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .todo_1 {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .todo2 ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo2 ul li {
+        justify-content: flex-start;
+    }
+
+    .abd,
+    .abd1,
+    .abd2 {
+        margin-left: 5px;
+    }
+}
